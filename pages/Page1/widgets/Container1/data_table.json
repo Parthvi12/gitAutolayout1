@@ -1,7 +1,7 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widgetName": "data_table",
     "onSort": "{{FindQuery.run()}}",
+    "widgetName": "data_table",
     "columnOrder": [
         "revenue",
         "imdb_id",
@@ -17,16 +17,16 @@
         "status",
         "customColumn1"
     ],
+    "isVisibleDownload": true,
     "dynamicPropertyPathList": [
         {"key": "onPageChange"},
         {"key": "primaryColumns.customColumn1.borderRadius"}
     ],
-    "isVisibleDownload": true,
-    "topRow": 7,
-    "bottomRow": 86,
-    "parentRowSpace": 10,
+    "topRow": 5.2,
+    "bottomRow": 84.2,
     "onPageChange": "{{FindQuery.run()}}",
     "isSortable": true,
+    "parentRowSpace": 10,
     "type": "TABLE_WIDGET",
     "defaultSelectedRow": "0",
     "animateLoading": true,
@@ -64,7 +64,8 @@
         {"key": "primaryColumns.customColumn1.computedValue"},
         {"key": "derivedColumns.customColumn1.computedValue"}
     ],
-    "leftColumn": 1,
+    "leftColumn": 0,
+    "delimiter": ",",
     "primaryColumns": {
         "imdb_id": {
             "isCellVisible": true,
@@ -318,7 +319,7 @@
             "verticalAlignment": "CENTER"
         }
     },
-    "delimiter": ",",
+    "flexVerticalAlignment": "end",
     "derivedColumns": {"customColumn1": {
         "boxShadow": "{{data_table.sanitizedTableData.map((currentRow) => ( \"none\"))}}",
         "isDerived": true,
@@ -344,8 +345,8 @@
     "labelTextSize": "0.875rem",
     "rightColumn": 64,
     "textSize": "0.875rem",
-    "widgetId": "m04j9ji345",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "widgetId": "m04j9ji345",
     "isVisibleFilters": true,
     "tableData": "{{FindQuery.data}}",
     "isVisible": "true",
@@ -376,15 +377,17 @@
             "menuColor": "{{appsmith.theme.colors.primaryColor}}"
         }
     },
+    "responsiveBehavior": "fill",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "isVisiblePagination": true,
     "primaryColumnId": "_id",
-    "verticalAlignment": "CENTER",
+    "alignment": "end",
     "columnSizeMap": {
         "task": 245,
         "deliveryAddress": 170,
         "step": 62,
         "id": 228,
         "status": 75
-    }
+    },
+    "verticalAlignment": "CENTER"
 }
