@@ -9,7 +9,7 @@
     "type": "ICON_BUTTON_WIDGET",
     "parentColumnSpace": 12.0703125,
     "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 55.715210355987054,
+    "leftColumn": 51.27950310559007,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
         {"key": "borderRadius"}
@@ -17,7 +17,7 @@
     "isDisabled": false,
     "flexVerticalAlignment": "end",
     "labelTextSize": "0.875rem",
-    "rightColumn": 59.85760517799353,
+    "rightColumn": 57.63975155279503,
     "iconName": "add",
     "widgetId": "atgojamsmw",
     "minWidth": 50,
